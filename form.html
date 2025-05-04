@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Disponibilità Cardiologi&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>header img {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-height: 80px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>table {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-collapse: collapse;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>th, td {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>th {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #f2f2f2;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#riepilogo ul {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>list-style: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding-left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>#riepilogo li {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.remove-btn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-left: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: red;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;img src="logo.png" alt="Logo Azienda"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Modulo di Disponibilità - Cardiologi&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;form action="/submit" method="post" id="disponibilitaForm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;label for="nome"&gt;Nome:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="text" id="nome" name="nome" required&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;th&gt;Giorno&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;th&gt;Mattina&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;th&gt;Pomeriggio&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const giorni = ['lun', 'mar', 'mer', 'gio', 'ven', 'sab'];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const giorniNome = {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>'lun': 'Lunedì',</p>
+<p class="p1"><span class="Apple-converted-space">          </span>'mar': 'Martedì',</p>
+<p class="p1"><span class="Apple-converted-space">          </span>'mer': 'Mercoledì',</p>
+<p class="p1"><span class="Apple-converted-space">          </span>'gio': 'Giovedì',</p>
+<p class="p1"><span class="Apple-converted-space">          </span>'ven': 'Venerdì',</p>
+<p class="p1"><span class="Apple-converted-space">          </span>'sab': 'Sabato'</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.write(giorni.map(g =&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>`&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;${giorniNome[g]}&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="checkbox" name="${g}_mattina" value="x" data-giorno="${g}" data-fascia="Mattina"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;input type="checkbox" name="${g}_pomeriggio" value="x" data-giorno="${g}" data-fascia="Pomeriggio"&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;`</p>
+<p class="p1"><span class="Apple-converted-space">        </span>).join(''));</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/table&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button type="submit"&gt;Invia Disponibilità&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/form&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;hr&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="riepilogo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;Riepilogo Turni Selezionati&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul id="listaRiepilogo"&gt;&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const riepilogo = document.getElementById('listaRiepilogo');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const checkboxes = document.querySelectorAll('input[type="checkbox"]');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function aggiornaRiepilogo() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>riepilogo.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>checkboxes.forEach(cb =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (cb.checked) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const giorno = cb.dataset.giorno;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const fascia = cb.dataset.fascia;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const nomeGiorno = giorniNome[giorno];</p>
+<p class="p1"><span class="Apple-converted-space">          </span>const id = `${giorno}_${fascia}`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>const li = document.createElement('li');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>li.textContent = `${nomeGiorno} - ${fascia}`;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>li.id = 'riepilogo_' + id;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>const btn = document.createElement('span');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.textContent = '❌';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.className = 'remove-btn';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>btn.onclick = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cb.checked = false;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>aggiornaRiepilogo();</p>
+<p class="p1"><span class="Apple-converted-space">          </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">          </span>li.appendChild(btn);</p>
+<p class="p1"><span class="Apple-converted-space">          </span>riepilogo.appendChild(li);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>checkboxes.forEach(cb =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cb.addEventListener('change', aggiornaRiepilogo);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>aggiornaRiepilogo();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
